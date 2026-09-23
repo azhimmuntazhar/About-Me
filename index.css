@@ -708,11 +708,11 @@ footer {
   margin: auto;
   width: fit-content;
   max-width: 95vw;
-  background-color: none;
+  background-color: rgba(0, 0, 0, 0.1);
   border: #962929 solid 1px;
   border-radius: clamp(15px, 4vw, 50px);
   padding: clamp(5px, 1vw, 10px);
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(7px);
 }
 .list-button-page {
   display: flex;
