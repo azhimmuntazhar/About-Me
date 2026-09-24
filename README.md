@@ -10,7 +10,7 @@
 
 | HTML | CSS | Javascript |
 |---------|--------|--------|
-| ![Html Preview](asset/Htmlmd.webp) | ![Css Preview](asset/Cssmd.webp) | ![Js Preview](asset/Jsmd.webp) |
+| ![Html Preview](asset/Htmlmd.png) | ![Css Preview](asset/Cssmd.png) | ![Js Preview](asset/Jsmd.png) |
 
 ## Deskripsi
 * Informasi Diri
