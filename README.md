@@ -4,7 +4,7 @@
 
 | Desktop | Tablet | Mobile |
 |---------|--------|--------|
-| ![Desktop Preview](asset/Desktop.webp) | ![Tablet Preview](asset/Tablet.webp) | ![Mobile Preview](asset/Mobile.webp) |
+| ![Desktop Preview](asset/Desktop.png) | ![Tablet Preview](asset/Tablet.png) | ![Mobile Preview](asset/Mobile.png) |
 
 ## Teknologi
 
