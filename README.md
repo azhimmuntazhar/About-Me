@@ -4,7 +4,7 @@
 
 | Desktop | Tablet | Mobile |
 |---------|--------|--------|
-| <img src="asset/Desktop.png" height="400" alt="Desktop"> | <img src="asset/Tablet.png" height="400" alt="Tablet"> | <img src="asset/Mobile.png" height="400" alt="Mobile"> |
+| <img src="asset/Desktop.png" height="300" alt="Desktop"> | <img src="asset/Tablet.png" height="300" alt="Tablet"> | <img src="asset/Mobile.png" height="300" alt="Mobile"> |
 
 ## Teknologi
 
