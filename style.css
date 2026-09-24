@@ -20,7 +20,6 @@
 }
 
 #background-color1 {
-    background-color: black;
     background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(53, 24, 21));
 }
 
@@ -43,6 +42,10 @@ p {
 
 .subtext::selection {
   background-color: #962929;
+  color: #ffffff;
+}
+
+#subtext {
   color: #ffffff;
 }
 
@@ -96,6 +99,7 @@ header {
   left: 0;
   width: 100%;
   padding: 15px clamp(15px, 5vw, 100px);
+  padding-top: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -112,36 +116,25 @@ header {
 .navigation a {
   position: relative;
   font-size: clamp(0.9em, 1.5vw, 1.33em);
-  color: #ffffff;
   text-decoration: none;
-  font-weight: 500;
-  margin-left: clamp(10px, 3vw, 40px);
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+  user-select: none;
+  backdrop-filter: blur(10px);
 }
 
-.navigation a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 100%;
-  height: 3px;
-  background: #ffffff;
-  border-radius: 5px;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform .5s;
+.togglemode {
+  font-size: clamp(0.9em, 1.5vw, 1.33em);
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  user-select: none;
+  padding: 2px;
+  border: none;
+  border-radius: 50px;
+  backdrop-filter: blur(5px);
 }
-
-.navigation a:hover::after {
-  transform-origin: left;
-  transform: scaleX(1);
-}
-
-.navigation a::selection {
-  background-color: none;
-  color: #ffffff;
-}
-
 
 .totonanwelcome {
   align-items: center;
@@ -324,7 +317,17 @@ header {
 }
 .keteranganku {
   margin-top: 30px;
-}.keteranganku h1::selection, .keteranganku p::selection, .keteranganku h2::selection{
+  color: #ffffff;
+}
+.keteranganku h1::selection{
+  background-color: #962929;
+  color: #ffffff; 
+}
+.keteranganku p::selection{
+  background-color: #962929;
+  color: #ffffff; 
+}
+.keteranganku h2::selection{
   background-color: #962929;
   color: #ffffff; 
 }
@@ -708,11 +711,10 @@ footer {
   margin: auto;
   width: fit-content;
   max-width: 95vw;
-  background-color: rgba(0, 0, 0, 0.1);
   border: #962929 solid 1px;
   border-radius: clamp(15px, 4vw, 50px);
   padding: clamp(5px, 1vw, 10px);
-  backdrop-filter: blur(7px);
+  backdrop-filter: blur(10px) !important;
 }
 .list-button-page {
   display: flex;
@@ -773,6 +775,7 @@ footer {
 }
 
 #exp {
+  width: 100%; height: auto; background-color: black; background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(53, 24, 21)); align-items: center; align-content: center; padding-left: 15%; padding-right: 15%;
   padding-left: clamp(3vw, calc(-65px + 20.5vw), 15vw) !important;
   padding-right: clamp(3vw, calc(-65px + 20.5vw), 15vw) !important;
 }
@@ -863,3 +866,94 @@ table {
   }
 }
 
+
+/* light & dark */
+
+.toggler::before {
+    content: "☀️";
+}
+body.darkmode .toggler::before {
+    content: "🌙";
+}
+
+body.darkmode #background-color1 {
+  background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(119, 203, 255)); 
+  transition: 0.5s;
+}body.darkmode .subtext{
+  color: rgb(255, 255, 255);
+}body.darkmode #subtext{
+  color: #000000;
+}body.darkmode .selamatdatang{
+  text-shadow: 3px 3px #000000;
+}body.darkmode .selamatdatang::selection{
+  background-color: #33b2d8;
+  text-shadow: 3px 3px black;
+  color: #ffffff;
+}body.darkmode .selamatdatang2{
+  background-image: linear-gradient(to left, #3ec1ea, #33b2d8);
+}body.darkmode .subtext::selection{
+  background-color: #33b2d8;
+}body.darkmode .btn{
+  background-color: #33b2d8;
+}body.darkmode .btn:hover{
+  background-color: #3ec1ea;
+}body.darkmode #background-color2 {
+    background-color: rgb(255, 255, 255);
+}body.darkmode #exp{
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(119, 203, 255));
+}body.darkmode .organizations{
+  background-color: rgb(119, 203, 255);
+}body.darkmode .skillpage{
+  background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(119, 203, 255));
+}body.darkmode .motivationpage {
+  color: black;
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(119, 203, 255));
+}body.darkmode .nav-page{
+  border: #33b2d8 solid 1px;  
+}body.darkmode .list-button-page button{
+  background-color: #33b2d8;  
+}body.darkmode .card{
+  background-color: #33b2d8;
+}body.darkmode .logolomba {
+  box-shadow: 5px 5px #64cfef;
+}body.darkmode .horizontal:hover{
+  border: #ffffff solid 2px;
+}body.darkmode .listdot{
+  color: rgb(49, 144, 204);
+}body.darkmode .sosialmedia svg:hover{
+  fill: #33b2d8;
+}body.darkmode .keteranganku{
+  color: #000000;
+}body.darkmode .keteranganku p{
+  color: #000000;
+}body.darkmode .keteranganku h1::selection{
+  background-color: #33b2d8;
+  color: #ffffff; 
+}body.darkmode .keteranganku p::selection{
+  background-color: #33b2d8;
+  color: #ffffff; 
+}body.darkmode .keteranganku h2::selection{
+  background-color: #33b2d8;
+  color: #ffffff; 
+}body.darkmode td::selection{
+  background-color: #33b2d8;
+  color: #ffffff; 
+}body.darkmode .experience{
+  color: #000000;
+}body.darkmode .experience h1::selection{
+  background-color: #33b2d8;
+  color: #ffffff; 
+}body.darkmode .background-select-red::selection{
+  background-color: #33b2d8;
+  color: #ffffff; 
+}body.darkmode #text-black{
+  color: #000000;
+}body.darkmode .kutipan{
+  color: #000000;
+}body.darkmode .judul::selection{
+  background-color: #33b2d8;
+  color: #ffffff; 
+}body.darkmode .list-button-page button:hover {
+  background-color: #3ec1ea;
+  transition: 0.3s;
+}
